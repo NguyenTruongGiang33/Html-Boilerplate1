@@ -1,0 +1,67 @@
+.banner-container{
+    .container-banner{
+        position: relative;
+        .banner-image{
+            img{
+                width:100%;
+            }
+        }
+        .page-banner-text-center{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            .line1{
+                @include rem("font-size",36);
+                letter-spacing: 2px;
+                @include rem("line-height",30);
+                color: beige;
+                font-family: $ff-timenew;
+                font-style: italic;
+                margin-top: 60px;
+            }
+            .line2{
+                    @include rem("font-size",100);
+                    @include rem("letter-spacing",5);
+                    @include rem("line-height",30);
+                    color: #ffffff;
+                    font-family: $font-lato; 
+                    margin-top: 10px;  
+            }
+            .line3{
+                button{
+                    width: 280px;
+                    height: 64px;
+                    border-radius: 3px ;
+                    background-color: rgba(246,150,121,0);
+                    border: 3px solid #ffffff;
+                    font-family: $font-lato;                
+                    @include rem("font-size", 18);
+                    @include rem("line-height", 21);
+                    color: $cl-primary;
+                    margin-top: 20px;                
+                }
+            }
+            .ripple {
+                background-position: center;
+                transition: background 0.8s;
+            }
+            .ripple:hover {
+                background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+            }
+            .ripple:active {
+                background-color: #6eb9f7;
+                background-size: 100%;
+                transition: background 0s;
+            }
+            .line4{
+                @include rem("font-size",14);
+                @include rem("line-height",30);
+                font-weight: 400;
+                color: #ffffff;
+                margin-top: 30px;
+            }
+         }
+    }
+}
