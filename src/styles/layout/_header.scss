@@ -1,0 +1,33 @@
+.header-container{
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    width: auto;
+    right: 0;
+    left: 0;
+    top:0;
+    background-color: rgba(75, 193, 210, 0);
+    @include transition(all 0.4s ease-in-out);
+     .menu_header{
+        @include flexbox;
+        .menu_right{
+            flex: auto;
+            @include flexbox;
+            @include justify-content(flex-end);
+            @include align-items(center);
+            li{
+                display: inline-block;
+            }
+            a{
+                display: block;
+                color: $cl-primary;
+                margin: 0 15px;
+                font-weight:700;
+                font-family: $font-lato;
+                @include rem("font-size", 14);
+                letter-spacing: 1px;
+                @include rem("line-height", 30);
+            }
+        }
+    }
+}
