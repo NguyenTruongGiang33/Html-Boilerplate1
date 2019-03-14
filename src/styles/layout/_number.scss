@@ -1,0 +1,30 @@
+.number-container{
+    .container{
+        .row{
+            height: 150px;
+            @include flexbox;
+            @include justify-content(space-around);
+            @include align-items(center);
+            text-align: center;
+            margin: 0 100px;
+            .count-number{
+                .count-price{
+                    @include rem("font-size",36);
+                    letter-spacing: 2px;
+                    @include rem("line-height",30);
+                    font-weight: 700;
+                    font-family: $font-lato;
+                    color: black;
+                    margin-bottom: 12px;    
+                }
+                .text{
+                    @include rem("font-size",16);
+                    letter-spacing: 1px;
+                    @include rem("line-height",18);
+                    font-weight: 300;
+                    font-family: $font-lato;
+                }
+            }
+        }
+    }
+}        

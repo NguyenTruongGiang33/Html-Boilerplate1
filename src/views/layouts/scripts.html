@@ -5,3 +5,19 @@
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
+
+
+
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+	  $(".counter").counterUp({
+		delay: 30, /* The delay in milliseconds per number count up */
+		time: 3000, /*The total duration of the count up animation */
+		offset: 100, 
+		/*The viewport percentile from which the counter starts (by default it's 100, meaning it's triggered at the very moment the element enters the viewport) */
+	  });
+	});
+	</script>
