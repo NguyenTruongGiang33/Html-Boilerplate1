@@ -17,10 +17,7 @@
                 margin: auto;
                 margin-bottom: 15px;
                 .icon{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                    @include center-align-absolute;
                 }
             }
             .title{
@@ -38,10 +35,7 @@
                     width: 80px;
                     height: 1px;
                     background: #F57365;
-                    position: absolute;
-                    left: 50%;
-                    bottom: -20%;
-                    transform: translateX(-50%);
+                    @include features;
                 }
             }
             .text{
