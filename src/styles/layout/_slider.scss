@@ -1,0 +1,85 @@
+.slide-container{
+    .container{
+        .abso{
+            position:relative;			
+			top:-8px;
+            .img1{
+                width: 100%;
+            }
+            .rela{
+                position:absolute;
+                bottom:0;
+                left:25%;
+                transform:translate(-25%);
+            }  
+            .container_vongtron{
+                @include flexbox;
+                position:absolute;
+                bottom:5%;
+                left:50%;
+                transform:translate(-50%);
+            .vongtronnho{
+                width:10px;
+                height:10px;
+                border-radius:50%;
+                background-color:darkgrey;
+                margin:0 3px;
+                transition: background-color 0.5s ease;
+                cursor:pointer; 
+            }   
+            .vongtronnho:hover{
+                background-color:white;
+            }
+            .active, .vongtronnho:hover{
+                background-color: white;
+		    }
+        }
+        .smo{
+            .s-content{
+                width: 100%;
+                position:absolute;
+                top:50%;
+                left:50%;
+                text-align:center;
+                transform:translate(-50%,-50%);
+                letter-spacing: 1px;
+                color: lightgrey;
+                .img-icon{
+                    width:118px;
+                    height:118px;
+                    border-radius:50%;
+                    border: 3px solid darkgrey;
+                    margin:auto;
+                    margin-bottom: 10px; 
+                    background-color: #3e3e3e;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                } 
+                .s-text{
+                    @include rem("font-size",17);
+                    @include rem("line-height",36);
+                    font-family: $font-lato;
+                    font-weight: 150;
+                }
+            }
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 0.5s;
+                animation-name: fade;
+                animation-duration:0.5s;
+            }
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }  
+        }          
+    }
+   }
+}
