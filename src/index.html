@@ -31,6 +31,10 @@
 <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
+<!-- import bootstrap using CDN-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- endbuild -->
+
 </head>
 <body>
   <div class="wrapper">
@@ -105,43 +109,40 @@
   </div>
 </footer>
           <!-- include slider.html -->
-    <section class="slide-container">
-    <div class="container">
-        <div class="abso">
-            <img src="images/Rectangle 6.png" class="img1">
-		    <div class="rela"> 
-                <img src="" class="center-image">
-            </div>
-            <div class="smo">
-                <div class="s-content">
-                    <div class="img-icon">
-                        <img src="images/person.png" class="center_img"/>
+    <section class="review-container">
+    <div class="container-fluid p-0 position-relative">
+        <img class="review-background" src="images/slide_background.png" alt="review-background">
+
+        <div class="slider" id="review-slider">
+            <div class="slider-item">
+                <blockquote class="blockquote text-center">
+                    <div class="avatar-border">
+                        <img class="avatar" src="images/Layer 18.png">
                     </div>
-                    <p class="s-text">
-                         “I am so happy because I found this recipe, and it just made my life easier. <br>Thanks so much for sharing!”
-                    </p>
-                    <p class="s-text">
-                        <span class="s-person" >- Michael Dawson, San Francisco, CA -</span>
-                    </p>	
-                </div>
-                <div class="s-content">
-                    <div class="img-icon" style="background-image:url(http://thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-chu-meo-cuc-dang-yeu_101305276.jpg);"></div>
-                    <h2> SLICE 2 </h2>
-                    <h3> SLICE 2 </h3>				
-                </div>				
-                <div class="s-content">
-                    <div class="img-icon" style="background-image:url(http://thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-thiet-ke-cuc-dep_101257772.jpg);"></div>
-                    <h2> SLICE 3 </h2>
-                    <h3> SLICE 3 </h3>		
-                </div>		
-            </div>	
-            <div class="container_vongtron">
-                <div class="vongtronnho" onclick="currentSlide(0)"> </div>
-                <div class="vongtronnho" onclick="currentSlide(1)"> </div>
-                <div class="vongtronnho" onclick="currentSlide(2)"> </div>
-            </div> 
-    </div>		
-   </div>       
+                    <p class="review-text">I am so happy because I found this recipe, and it just made my life easier.<br>Thanks so much for sharing!</p>
+                    <footer class="blockquote-footer">Michael Dawson, San Fracisco, CA</footer>
+                </blockquote>
+            </div>
+            <div class="slider-item">
+                <blockquote class="blockquote text-center">
+                    <div class="avatar-border">
+                        <img class="avatar" src="images/Layer 18.png">
+                    </div>
+                    <p class="review-text">Slice 2</p>
+                    <footer class="blockquote-footer">Author 2</footer>
+                </blockquote>
+            </div>
+            <div class="slider-item">
+                <blockquote class="blockquote text-center">
+                    <div class="avatar-border">
+                        <img class="avatar" src="images/Layer 18.png">
+                    </div>
+                    <p class="review-text">Slice 3</p>
+                    <footer class="blockquote-footer">Author 3</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
 </section>
   </div>
 
@@ -153,5 +154,11 @@
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
+
+<!-- import bootstrap JS using CDN-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- endbuild -->
+<!-- import slick JS using CDN-->
+<script type="text/javascript" src="scripts/slick.min.js"></script>
 </body>
 </html>
