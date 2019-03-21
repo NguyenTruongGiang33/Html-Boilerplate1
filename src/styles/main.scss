@@ -20,12 +20,16 @@
 @import "layout/header";
 @import "layout/banner";
 @import "layout/footer";
+@import "layout/slider";
 @import "layout/features";
+@import "layout/slider";
 
 // ----------------------------------------------------------------------
 // Custom
 // ----------------------------------------------------------------------
 @import "custom/custom-plugin";
+@import "custom/slick.scss";
+@import "custom/slick-theme.scss";
 
 // ----------------------------------------------------------------------
 // Pages
