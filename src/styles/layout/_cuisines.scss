@@ -1,0 +1,74 @@
+.cusines-container{
+    .container{
+        max-width: 100%;
+        padding: 0;
+        .row1{
+            .col-md-12{
+                .heading-title{
+                    @include rem("font-size",18);
+                    letter-spacing: 1px;
+                    @include rem("line-height",30);
+                    color: black;
+                    font-family: $font-lato;
+                    font-weight: 700;
+                    margin: 50px 0;
+                    position: relative;
+                    
+                    &:after{
+                        content: '';
+                        width: 100px;
+                        height: 2px;
+                        background: #F57365;
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%);
+                        bottom: -20%;
+                    }
+                }
+            }
+        }
+        .row2{
+            display:flex;
+            flex-wrap:wrap;
+            .img-eat{
+                width:20%;
+                overflow:hidden;
+                height:auto;
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position: center center;   
+                position:relative;
+                display: inline-block;
+                .photobox__previewbox{
+                    .item-image{
+                        width: 100%;
+                        transition: transform 0.5s ease;
+                    }
+                }
+                &:hover .item-image{
+                    transform: scale(1.2);
+                }
+            }
+            .title_contai{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                text-align:center;
+                color:white;
+                @include rem("ling-height",13);
+                .price{
+                    @include rem("font-size",15);
+                    font-style: italic;    
+                }
+                .title{
+                    @include rem("font-size",25);
+                    letter-spacing: 2px;
+                    font-family:$font-lato;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,54 @@
+.introdution-container{
+    background-color:floralwhite;
+    padding-top: 100px;
+    .container{
+        .row{
+            .left-contain{
+                text-align: center;
+                width: 50%;
+                .img1{
+                    img{
+                         width: 65%;
+                    }
+                }
+            }
+            .right-contain{
+                width: 50%;
+                margin-top: 35px;
+                .title-intro{
+                    @include rem("font-size",18);
+                    @include rem("line-height",30);
+                    color: #000000;
+                    font-weight: 700;
+                    font-family: $font-lato;
+                    margin-bottom: 30px;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        width: 85px;
+                        height: 2px;
+                        background: #F57365;
+                        position: absolute;
+                        left: 0;
+                        bottom: -20%;
+                    }
+                }
+                .text-p{
+                    @include rem("font-size",16);
+                    @include rem("line-height",18);
+                    color: #000000;
+                    font-family: $font-lato;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    margin-bottom: 30px;
+                }
+                .logo-ac{
+                    display: flex;
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
