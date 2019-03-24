@@ -21,8 +21,9 @@
                     @include rem("font-size",16);
                     letter-spacing: 1px;
                     @include rem("line-height",18);
-                    font-weight: 300;
+                    font-weight: 200;
                     font-family: $font-lato;
+                    color: #8b8b8b;
                 }
             }
         }

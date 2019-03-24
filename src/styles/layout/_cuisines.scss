@@ -60,11 +60,11 @@
                 .price{
                     @include rem("font-size",15);
                     font-style: italic;    
+                    letter-spacing: 1px;
                 }
                 .title{
                     @include rem("font-size",25);
                     letter-spacing: 2px;
-                    font-family:$font-lato;
                     font-weight: 700;
                 }
             }

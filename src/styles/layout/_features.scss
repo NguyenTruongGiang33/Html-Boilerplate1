@@ -25,7 +25,7 @@
                 letter-spacing: 1px;
                 @include rem("line-height",30);
                 color: #000000;
-                font-weight: 700;
+                 font-weight: lighter; 
                 font-family: $font-lato;
                 position: relative;
                 margin-bottom: 15px;
@@ -41,10 +41,10 @@
             .text{
                 @include rem("font-size",16);
                 letter-spacing: 1px;
-                @include rem("line-height",18);
-                font-family: $font-lato;
-                font-weight: 100;
-            
+                @include rem("line-height",18); 
+                font-weight: 200;
+                color: #8b8b8b; 
+                font-weight: lighter;  
        
             }
             
