@@ -16,18 +16,19 @@
                 @include rem("font-size",36);
                 letter-spacing: 2px;
                 @include rem("line-height",30);
-                color: beige;
+                color: rgba(255, 255, 255, 0.702);
                 font-family: $ff-timenew;
+                font-weight: bold;
                 font-style: italic;
-                margin-top: 60px;
+                margin-bottom: 40px;
+                margin-top: 40px;
             }
             .line2{
                     @include rem("font-size",100);
                     @include rem("letter-spacing",5);
                     @include rem("line-height",30);
-                    color: #ffffff;
-                    font-family: $font-lato; 
-                    margin-top: 10px;  
+                    color: $cl-primary;
+                    margin-bottom: 60px;
             }
             .line3{
                 button{
@@ -35,13 +36,17 @@
                     height: 64px;
                     border-radius: 3px ;
                     background-color: rgba(246,150,121,0);
-                    border: 3px solid #ffffff;
-                    font-family: $font-lato;                
+                    border: 3px solid #ffffff;                
                     @include rem("font-size", 18);
                     @include rem("line-height", 21);
-                    color: $cl-primary;
-                    margin-top: 20px;                
+                    color: $cl-primary;             
                 }
+            }
+            .line4{
+                font-family: "Lato Light";
+                line-height: 21px;
+                @include rem("font-size",14);
+                @include rem("line-height",30);
             }
             .ripple {
                 background-position: center;
@@ -50,7 +55,7 @@
             .ripple:hover {
                 background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
             }
-            .ripple:active {
+            .ripple:active{
                 background-color: #6eb9f7;
                 background-size: 100%;
                 transition: background 0s;

@@ -36,11 +36,11 @@
                 .text-p{
                     @include rem("font-size",16);
                     @include rem("line-height",18);
-                    color: #000000;
                     font-family: $font-lato;
-                    font-weight: 300;
+                   
                     letter-spacing: 1px;
                     margin-bottom: 30px;
+                    font-weight: lighter;
                 }
                 .logo-ac{
                     display: flex;
