@@ -1,7 +1,6 @@
 
 .review-container {
     overflow: hidden;
-   
     .review-background {
         width: 100%;
         height: auto;
@@ -15,8 +14,8 @@
     }
     .avatar-border {
         display: inline-block;
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         background-color: #fff;
         overflow: hidden;
@@ -25,6 +24,7 @@
         .avatar {
             max-width: 100%;
             height: auto;
+            
         }
     }
     .review-text, .blockquote-footer {
